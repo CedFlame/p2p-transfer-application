@@ -5,13 +5,11 @@ import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import ru.shmatov.controller.enums.BotCommand;
-import ru.shmatov.response.APIResponse;
 import ru.shmatov.service.NodeService;
 import ru.shmatov.utils.MessageUtils;
 
 import java.util.Arrays;
 import java.util.Locale;
-import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 @Slf4j
