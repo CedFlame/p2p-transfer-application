@@ -1,0 +1,25 @@
+server:
+  port: 8080
+database:
+  url: ${DATABASE_URL}
+  username: ${DATABASE_USERNAME}
+  password: ${DATABASE_PASSWORD}
+  driver: ${DATABASE_DRIVER}
+jwt:
+  secret: "U8fD9gH1kL3mN7pQ5rS0vX2yZ4bC6eW8aT1uQ3sX5dH7jK9lP2oM4rV6nY8bT0aQ"
+  expiration-ms: 86400000
+spring:
+  account-max-balance: 5
+  redis:
+    host: localhost
+    port: 6380
+    timeout: 1000ms
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  sql:
+    init:
+      mode: never
+      platform: postgres
+redis:
+  ttl-seconds: 90
